@@ -21,13 +21,14 @@ function mp3(){
 	    else
 	        echo -e "${nazul}El programa no tiene como ejecutarse :(${nazul}"
 	        exit
+            terminal
 	    fi
 	fi
 	
 
 	#Codigo del reproductor
 	printf "${nblanco}"
-	echo -e "${bnegro}------------------------------------------------${bnegro}
+	echo -e "${bnegro}        ------------------------------------------------${bnegro}
 	${bnegro}|                                              |${bnegro}
 	${bnegro}|             Bienvenido al MP3                |${bnegro}
 	${bnegro}|                                              |${bnegro}
@@ -48,7 +49,7 @@ function mp3(){
 	    printf "${nazul}"
 	
 
-	    echo -e "${bnegro}-------------------------------------------${bnegro}
+	    echo -e "${bnegro}        -------------------------------------------${bnegro}
 	${bnegro}|      ${nblanco}¿Que quieres hacer?${nazul}               |${bnegro}
 	${bnegro}-------------------------------------------${bnegro}
 	${bnegro}|      1) Reproducir todas las canciones  |${bnegro}
@@ -97,7 +98,7 @@ function mp3(){
 	                    echo -e "${bnegro}|       L) Canciones disponibles                  |${bnegro}" 
 	                    echo -e "${bnegro}|       Q) Parar el reproductor                   |${bnegro}"
 	                    echo -e "${bnegro}---------------------------------------------------${bnegro}"
-	                    mpg123 -C --title -q *.mp3 &
+	                    mpg123 -C --title -q *.mp3 
 						#-C: mp3 controlado por comandos en la línea de comandos/controlan la reproducción.
 						#--title: muestra el título de la canción actual en reproducción.
 						#-q: en el reproductor de audio no se muestran mensajes extras.
